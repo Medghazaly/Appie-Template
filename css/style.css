@@ -61,6 +61,7 @@ input:focus {
   height: 100vh;
   background-color: var(--main-bg);
   position: relative;
+  overflow: hidden;
 }
 
 .header .main-header {
@@ -212,7 +213,7 @@ input:focus {
 /* IMAGE BACKGROUND */
 .header .img-bg {
   position: absolute;
-  bottom: 0;
+  bottom: -4px;
   right: 0;
   z-index: 1;
 }
