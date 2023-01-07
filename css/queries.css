@@ -1,0 +1,56 @@
+/* Medium */
+@media (max-width: 991px) {
+  /* MAIN HEADER */
+  .main-header .left-header {
+    gap: 3.5rem;
+  }
+
+  .main-header ul {
+    gap: 1rem;
+    font-size: 15px;
+  }
+
+  .header .img-bg img {
+    width: 550px;
+  }
+}
+
+/* Small */
+@media (max-width: 767px) {
+  /* MAIN HEADER */
+  .main-header ul {
+    display: none;
+  }
+
+  .main-header .right-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .main-header .btn {
+    padding-inline: 1rem;
+  }
+
+  .main-header .bar {
+    display: block;
+  }
+
+  /* HERO */
+  .hero {
+    width: 92%;
+  }
+
+  .hero h1,
+  .hero .email {
+    width: 100%;
+  }
+
+  .hero h1 {
+    font-size: 29px;
+  }
+
+  .header .img-bg img {
+    width: 200px;
+  }
+}
