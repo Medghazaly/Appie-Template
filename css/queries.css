@@ -53,4 +53,25 @@
   .header .img-bg img {
     width: 200px;
   }
+
+  /* FEATURES */
+  .features .special-content {
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 2rem;
+    justify-content: center;
+  }
+
+  .special-title {
+    font-size: 35px;
+    margin-bottom: 15px;
+  }
+
+  .features .box {
+    text-align: center;
+  }
+
+  .features .box .icon {
+    margin: 0 auto;
+  }
 }
