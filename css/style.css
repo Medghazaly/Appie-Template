@@ -4,6 +4,7 @@
   --main-bg: #eef1f6;
   --font-color: #0e1133;
   --padding-block: 60px;
+  --opacity: 0.7;
 }
 
 /* Global Rules */
@@ -240,7 +241,7 @@ input:focus {
 
 .special-title + p {
   font-size: 15px;
-  opacity: 0.7;
+  opacity: var(--opacity);
 }
 
 .features .btn-feature {
@@ -250,6 +251,9 @@ input:focus {
   border: 2px solid var(--main-bg);
   padding: 0.8rem;
   border-radius: 50px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
 .features .content {
@@ -311,7 +315,7 @@ input:focus {
   font-size: 13px;
   margin-top: 10px;
   margin-bottom: 20px;
-  opacity: 0.7;
+  opacity: var(--opacity);
   line-height: 1.4;
 }
 
@@ -319,4 +323,69 @@ input:focus {
   font-size: 11px;
   color: #6c6c72;
   font-weight: bold;
+}
+
+.features .about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 4rem;
+  background-color: var(--main-bg);
+  overflow: hidden;
+}
+
+.about .image {
+  width: 85%;
+  height: 300px;
+  position: relative;
+}
+
+.about .image img {
+  width: 400px;
+  position: absolute;
+  left: 50%;
+  bottom: -190px;
+  transform: translateX(-50%);
+}
+
+.about .market {
+  color: var(--btn-color);
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.about h2 {
+  font-size: 33px;
+  margin-block: 20px 15px;
+}
+
+.about p {
+  font-size: 13px;
+  opacity: var(--opacity);
+}
+
+.about .benefit {
+  display: flex;
+  margin-top: 30px;
+  gap: 20px;
+}
+
+.about .cont {
+  display: flex;
+  gap: 10px;
+}
+
+.about .icon i {
+  color: var(--btn-color);
+  font-size: 20px;
+}
+
+.about .text h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+  opacity: var(--opacity);
+}
+
+.about .text p {
+  font-size: 11px;
 }

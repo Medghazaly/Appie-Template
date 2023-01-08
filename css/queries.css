@@ -13,6 +13,19 @@
   .header .img-bg img {
     width: 550px;
   }
+
+  /* FEATURES */
+  .features .about .image {
+    display: none;
+  }
+
+  .features .text-content {
+    text-align: center;
+  }
+
+  .features .about .benefit {
+    flex-direction: column;
+  }
 }
 
 /* Small */
@@ -73,5 +86,17 @@
 
   .features .box .icon {
     margin: 0 auto;
+  }
+
+  .features .about {
+    padding: 2rem;
+  }
+
+  .about h2 {
+    font-size: 20px;
+  }
+
+  .about p {
+    font-size: 12px;
   }
 }
