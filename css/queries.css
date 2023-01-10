@@ -92,11 +92,65 @@
     padding: 2rem;
   }
 
-  .about h2 {
+  .about h2,
+  .download-app h2 {
     font-size: 20px;
   }
 
-  .about p {
+  .about p,
+  .download-app p {
     font-size: 12px;
+  }
+
+  .download-app .paraph {
+    width: fit-content;
+  }
+
+  /* OTHER FEATURES */
+  .other-features .content {
+    flex-direction: column;
+    gap: 30px;
+    align-items: stretch;
+  }
+
+  .other-features .img {
+    align-self: center;
+  }
+
+  .other-features img {
+    width: 300px;
+  }
+
+  /* COUNTER */
+  .counter .content {
+    flex-direction: column;
+    gap: 25px;
+    align-items: stretch;
+  }
+
+  .counter .slide-video {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .counter .left {
+    width: 100%;
+  }
+
+  .counter .left img {
+    width: 100%;
+    height: fit-content;
+  }
+
+  .counter .left .cont {
+    margin-left: 0;
+  }
+
+  .counter .right {
+    width: 100%;
+  }
+
+  .counter .right .btns {
+    display: none;
   }
 }
