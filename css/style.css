@@ -32,6 +32,11 @@ input:focus {
   outline: none;
 }
 
+button {
+  border: none;
+  outline: none;
+}
+
 .container {
   padding-inline: 15px;
   margin-inline: auto;
@@ -56,6 +61,17 @@ input:focus {
   .container {
     width: 1170px;
   }
+}
+
+.special-btn {
+  display: flex;
+  font-size: 13px;
+  width: fit-content;
+  font-weight: bold;
+  border: 2px solid var(--main-bg);
+  padding: 0.6rem 1.5rem;
+  border-radius: 50px;
+  cursor: pointer;
 }
 
 /* Header */
@@ -249,6 +265,7 @@ input:focus {
   align-self: flex-end;
   font-size: 13px;
   font-weight: bold;
+  background-color: #fff;
   border: 2px solid var(--main-bg);
   padding: 0.8rem;
   border-radius: 50px;
@@ -564,16 +581,6 @@ input:focus {
   margin: 10px 0 20px;
 }
 
-.counter .left .cont .btn {
-  font-size: 13px;
-  width: fit-content;
-  font-weight: bold;
-  border: 2px solid var(--main-bg);
-  padding: 0.6rem 1.5rem;
-  border-radius: 50px;
-  cursor: pointer;
-}
-
 .counter .right {
   width: 29%;
 }
@@ -623,11 +630,16 @@ input:focus {
   padding: 0.5rem 1.3rem;
   border: 1px solid var(--font-color);
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .download-app .cont:first-child {
   background-color: var(--font-color);
   color: #fff;
+}
+
+.download-app .cont:last-child {
+  background-color: #fff;
 }
 
 .download-app .cont i {
@@ -646,4 +658,211 @@ input:focus {
 /* PRICING */
 .pricing {
   padding-block: var(--padding-block);
+}
+
+.pricing .btns {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: var(--padding-block) auto;
+  text-align: center;
+  padding: 4px;
+  border: 1px solid var(--main-bg);
+  border-radius: 50px;
+  width: fit-content;
+}
+
+.pricing .btns button {
+  font-size: 11px;
+  font-weight: bold;
+  background-color: #fff;
+  padding: 5px 15px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.pricing .btns button:first-child {
+  color: #fff;
+  background-color: var(--btn-color);
+}
+
+.pricing .plans {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.pricing .box {
+  padding: 2rem;
+  border: 1px solid var(--main-bg);
+  border-radius: 5px;
+  height: fit-content;
+}
+
+.pricing .box:nth-child(2) {
+  border-top: 3px solid var(--btn-color);
+  box-shadow: var(--box-shadow);
+  position: relative;
+  overflow: hidden;
+}
+
+.pricing .box:nth-child(2)::after {
+  content: "Most popular";
+  font-size: 11px;
+  color: #fff;
+  font-weight: bold;
+  padding: 5px 15px;
+  background-color: #2a6df5;
+  border-radius: 50px;
+  position: absolute;
+  right: -8px;
+  top: 20px;
+}
+
+.pricing .box:nth-child(2) .special-btn {
+  color: #fff;
+  background-color: var(--btn-color);
+}
+
+.pricing .plans .text {
+  margin-block: 20px;
+}
+
+.pricing .plans .text h3 {
+  position: relative;
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+
+.pricing .plans .text h3::before {
+  content: "\24";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  font-size: 18px;
+  position: relative;
+  top: -9px;
+  margin-right: 5px;
+}
+
+.pricing .plans .text h3::after {
+  content: "/month";
+  font-size: 10px;
+  font-weight: 400;
+  position: relative;
+  bottom: 0;
+}
+
+.pricing .plans .text p {
+  font-size: 13px;
+  opacity: var(--opacity);
+}
+
+.plans .line {
+  width: 100%;
+  height: 1px;
+  background-color: var(--main-bg);
+}
+
+.pricing .plans .content {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.pricing .plans .cont {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.pricing .plans .cont i {
+  width: 30px;
+  height: 30px;
+  color: #5b8ff7;
+  background-color: var(--main-bg);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pricing .feedbacks {
+  margin-top: var(--padding-block);
+  padding: var(--padding-block) 1rem;
+  background-image: url(/images/feedback-bg.png);
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.feedbacks .img-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.feedbacks .img-content img {
+  border-radius: 50%;
+}
+
+.feedbacks .img-content .icons {
+}
+
+.feedbacks .img-content .icons i {
+  color: #ffb848;
+}
+
+.feedbacks .img-content .review {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.feedbacks .text-content {
+}
+
+.feedbacks .text-content p {
+  max-width: 500px;
+  line-height: 1.4;
+  margin-bottom: 30px;
+}
+
+.feedbacks .text-content .command {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.feedbacks .text h3 {
+  font-size: 17px;
+  margin-bottom: 5px;
+}
+
+.feedbacks .text span {
+  font-size: 14px;
+  opacity: var(--opacity);
+}
+
+.feedbacks .btns-two {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.feedbacks .btns-two .icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--main-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feedbacks .btns-two i {
 }

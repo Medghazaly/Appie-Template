@@ -76,7 +76,7 @@
   }
 
   .special-title {
-    font-size: 35px;
+    font-size: 25px;
     margin-bottom: 15px;
   }
 
@@ -151,6 +151,25 @@
   }
 
   .counter .right .btns {
+    display: none;
+  }
+
+  /* Pricing */
+  .pricing .feedbacks {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .feedbacks .text-content p {
+    text-align: center;
+  }
+
+  .feedbacks .text-content .command {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .feedbacks .btns-two {
     display: none;
   }
 }
