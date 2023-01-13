@@ -30,6 +30,10 @@
 
 /* Small */
 @media (max-width: 767px) {
+  /* SPECIAL DESIGN */
+  .btn-up {
+    opacity: 0.5;
+  }
   /* MAIN HEADER */
   .main-header ul {
     display: none;
@@ -171,5 +175,39 @@
 
   .feedbacks .btns-two {
     display: none;
+  }
+
+  /* FOOTER */
+  .footer .content {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .footer .box:first-child,
+  .footer .box:last-child {
+    width: inherit;
+  }
+
+  .footer .box .social-media {
+    justify-content: center;
+  }
+
+  .footer .box .info {
+    align-items: center;
+  }
+
+  .footer .copyright {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .footer .copyright .text p {
+    font-size: 13px;
+  }
+
+  .footer .copy {
+    width: 100%;
+    text-align: center;
   }
 }
